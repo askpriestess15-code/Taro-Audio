@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Личный голосовой расклад Таро на три ваших вопроса. Тайна Жрицы. Стоимость 3 500 ₽.">
+<title>Голосовой расклад на три вопроса — Тайна Жрицы</title>
+<style>
+:root{color-scheme:dark;--ink:#211620;--paper:#f4eddf;--gold:#e9c58b;--muted:#e0ced9;--line:#70586a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--paper);font:1rem/1.6 system-ui,sans-serif}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:3px solid #d89953;outline-offset:5px}
+.wrap{width:min(1100px,calc(100% - 3rem));margin:auto}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;min-height:72px;gap:1rem}
+.brand{font:1.45rem Georgia,serif;text-decoration:none}
+.brand span{color:var(--gold);margin-right:.4rem}
+.nav{color:var(--muted);font-size:.95rem;text-underline-offset:.3em}
+h1,h2,h3{font-family:Georgia,serif;font-weight:400;line-height:1.08;margin:0}
+h1{font-size:clamp(3rem,7.2vw,6.4rem);letter-spacing:-.055em}
+h1 em{color:var(--gold);font-weight:400}
+h2{font-size:clamp(2rem,4.7vw,3.45rem);letter-spacing:-.035em}
+h3{font-size:1.65rem}
+p{margin:.8rem 0 0}
+.hero{background:radial-gradient(ellipse at 77% 51%,#593549 0,transparent 57%)}
+.hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:2rem;padding:clamp(3rem,8vw,7rem) 0}
+.intro{max-width:34rem;color:var(--muted);font-size:1.1rem;margin:1.35rem 0 1.7rem}
+.button{display:inline-flex;min-height:53px;justify-content:center;align-items:center;padding:.7rem 1.35rem;background:var(--gold);color:#2b1923;font-weight:700;text-decoration:none;border-radius:5px}
+.button:hover{background:#f5d8a6}
+.tarot{isolation:isolate;position:relative;display:grid;place-items:center;min-height:370px}
+.tarot::before{content:"";position:absolute;width:min(100%,355px);aspect-ratio:1;border:1px solid #b8897860;border-radius:50%;box-shadow:0 0 0 15px #b8897815,inset 0 0 55px #c7847730}
+.card{display:grid;place-items:center;width:44%;max-width:167px;aspect-ratio: .65;position:absolute;border:1px solid #d0a575;border-radius:12px;background:repeating-radial-gradient(circle at center,#402638,#402638 12px,#674354 13px,#402638 14px);box-shadow:0 14px 32px #170c18aa;color:var(--gold)}
+.card::before{content:"";position:absolute;inset:8px;border:1px solid #d0a57580;border-radius:7px}
+.left{transform:translateX(-48%) rotate(-19deg)}
+.right{transform:translateX(48%) rotate(19deg)}
+.center{background:radial-gradient(ellipse,#5a354b,#291a2b 80%);font-size:clamp(3rem,7vw,5rem)}
+.center::after{content:"✦";position:absolute;top:12%;font-size:1rem}
+.examples{background:var(--paper);color:#342130;padding:clamp(3rem,7vw,6rem) 0}
+.examples p{max-width:680px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1.7rem}
+.example{border-top:1px solid #ad8874;padding-top:1.2rem}
+.example p{color:#564354}
+.example ul{padding-left:1.15rem;margin:.65rem 0 0}
+.example li{color:#564354;padding:.18rem 0 .35rem .15rem}
+.example li::marker{color:#80553e}
+.field-note{margin-top:1.6rem}
+.audio{padding:clamp(2.8rem,6vw,5rem) 0;border-bottom:1px solid var(--line)}
+.audio .wrap,.faq .wrap{display:grid;grid-template-columns:1fr 1.25fr;gap:2rem}
+.audio p,.faq p{color:var(--muted);margin-top:0}
+.audio p+p{margin-top:1rem}
+.faq{border-top:1px solid var(--line);padding:clamp(2.8rem,6vw,5rem) 0}
+details{padding:.75rem 0;border-bottom:1px solid var(--line)}
+details:first-child{padding-top:0}
+summary{cursor:pointer;color:var(--paper);font-weight:600}
+details p{padding:.55rem 0 .15rem}
+.process{padding:clamp(3rem,7vw,6rem) 0;display:grid;grid-template-columns:1fr 1.25fr;gap:2rem}
+ol{margin:0;padding-left:1.5rem}
+li{padding:.4rem 0 .65rem .45rem;color:var(--muted)}
+li::marker{color:var(--gold)}
+li strong{color:var(--paper)}
+.closing{background:#392739;border-top:1px solid var(--line);text-align:center;padding:clamp(2.5rem,6vw,4.5rem) 0}
+.closing p{color:var(--muted);margin-bottom:1.4rem}
+.contact{margin-top:1.2rem;color:var(--muted);display:block;text-underline-offset:.25em}
+@media(max-width:680px){.wrap{width:calc(100% - 2rem)}.hero .wrap,.process,.grid{grid-template-columns:1fr}.hero .wrap{gap:1rem}.tarot{min-height:245px}.tarot::before{width:230px}.card{max-width:110px}.grid{gap:1.2rem}.process{gap:1.4rem}}
+@media(max-width:680px){.audio .wrap,.faq .wrap{grid-template-columns:1fr;gap:1.4rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="#top"><span aria-hidden="true">✦</span>Тайна Жрицы</a><a class="nav" href="#process">Как проходит расклад</a></div></header>
+<main id="top">
+<section class="hero"><div class="wrap">
+<div><h1>Голосовой расклад<br><em>на три вопроса</em></h1>
+<p class="intro">Дорогие мои, бывает, одна мысль весь день возвращается. О работе, деньгах или человеке, с которым так и не состоялся важный разговор. Я запишу для вас личный голосовой расклад Таро на три вопроса.</p>
+<a class="button" href="https://payform.ru/e6b0mPG/">Оплатить расклад · 3 500 ₽</a></div>
+<div class="tarot" aria-hidden="true"><div class="card left"></div><div class="card right"></div><div class="card center">☾</div></div>
+</div></section>
+<section class="examples"><div class="wrap">
+<h2>С чем можно прийти</h2>
+<p>Можно посвятить все три вопроса одной ситуации или взять по вопросу из разных сфер. Вот как это может звучать.</p>
+<div class="grid">
+<article class="example"><h3>Деньги</h3><p>Вы хотите поднять цену, но каждый раз откладываете разговор.</p><ul><li>Чего я боюсь, когда называю новую цену?</li><li>На что я могу опереться в разговоре об оплате?</li><li>С какого шага мне проще начать?</li></ul></article>
+<article class="example"><h3>Работа и перемены</h3><p>Вам предложили новое место. Условия интересные, а решение всё откладывается.</p><ul><li>Что меня удерживает на нынешней работе?</li><li>Чего я на самом деле хочу от нового места?</li><li>Что мне важно прояснить, прежде чем согласиться?</li></ul></article>
+<article class="example"><h3>Отношения</h3><p>Человек из прошлого снова написал. Вы уже не первый вечер думаете, отвечать ли.</p><ul><li>Почему это сообщение так меня задело?</li><li>Чего я сейчас хочу от общения с ним?</li><li>Что мне важно сказать, если решу ответить?</li></ul></article>
+</div>
+<p class="field-note">Можно прийти и с вопросом о переезде, семье или новом этапе. Начните с того момента, к которому чаще всего возвращаетесь мыслями.</p>
+</div></section>
+<section class="audio"><div class="wrap">
+<h2>Что будет в голосовом разборе</h2>
+<div><p>Я пройдусь по вашим трём вопросам по порядку. Расскажу, как читаю карты в контексте вашей ситуации и какие детали предлагаю заметить. Если вопросы связаны, в конце соберу их в общий вывод.</p>
+<p>Вы получите запись в Telegram и сможете переслушать её в своём темпе. Например, перед разговором о работе можно вернуться к той части, где мы разбирали, что вам важно прояснить.</p></div>
+</div></section>
+<section class="wrap process" id="process">
+<h2>Как проходит расклад</h2>
+<ol>
+<li><strong>Оплатите 3 500 ₽</strong> по ссылке на этой странице.</li>
+<li><strong>Сразу после оплаты <a href="https://t.me/Julia_Mironova777">напишите мне в Telegram</a>.</strong> Пришлите одним сообщением свои три вопроса, имя и дату рождения.</li>
+</ol>
+</section>
+<section class="faq"><div class="wrap">
+<h2>Перед записью</h2>
+<div>
+<details><summary>Можно ли спросить и про работу, и про отношения?</summary><p>Да. Например, два вопроса можно посвятить работе, а третий — отношениям. Вы сами решаете, какие темы взять.</p></details>
+<details><summary>Нужно ли быть онлайн в определённое время?</summary><p>Я отправлю запись голосового расклада в Telegram. Её можно послушать, когда вам удобно.</p></details>
+</div>
+</div></section>
+<section class="closing"><div class="wrap">
+<h2>Что вам хочется прояснить?</h2>
+<p>Личный голосовой расклад Таро на три ваших вопроса.</p>
+<a class="button" href="https://payform.ru/e6b0mPG/">Оплатить расклад · 3 500 ₽</a>
+<a class="contact" href="https://t.me/Julia_Mironova777">Задать вопрос в Telegram</a>
+</div></section>
+</main>
+</body>
+</html>
